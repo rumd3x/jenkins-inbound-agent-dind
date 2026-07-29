@@ -4,6 +4,6 @@ FROM jenkins/inbound-agent:alpine
 ARG user=root
 
 USER root
-RUN apk add docker
+RUN apk add docker sshpass
 
 USER ${user}
